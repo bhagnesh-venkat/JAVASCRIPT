@@ -1,0 +1,169 @@
+Js is a programming language used to create dynamic and interactive webpages
+Js runs on web browsers such as Google chrome, Safari edge
+By using Js we can respond to user actions and transform user input whenever somebody interact with our site
+variable - A container that stores a value .
+    declaration lex x;
+    assignment x=100;
+Arithmetic operators - operands(values, variables, etc..)
+                       operators(+,=,*,/)
+    operator precedence
+        1.paranthesis()
+        2.exponents
+        3.Multiplication & division & modulo
+        4.addition and subtraction
+How to accept user input?
+    1.Easy way - window prompt
+    2.Professional way - HTML textbox
+Type conversion
+    changing the data type of a value to another
+    (string, number, boolean)
+Const - variables that can't be changed once assigned
+Math - built - in object that provides a collection of properties and methods
+IF statement - if a condition is true, execute some code if not do something else
+checked - property that describes the checked state of an HTML checkbox or radio button element
+Ternay operator - a shortcut to if{} and else{} statements helps to assign a variable based on a condition
+                condition? codeIfTrue : codeIfFalse;
+Switch - can be different replacement to many else if statements
+String methods - allows you to manipulate and work with text(strings)
+String Slicing - creating a substring from a portion of another string
+                 string.slice(start,end)
+Method Chaining - Calling one method from another in one continous line of code
+Logical Operators - used to combine or manipulate boolean values
+                    (true or false)
+                    AND = &&
+                    OR = ||
+                    NOT = !
+Strict Equality - = assignment operator
+                  == comparison operator(compare if values are equal)
+                  === strict equality operator(compares if values & datatypes are equal)
+                  != inequality operator
+                  !== strict inequality operator
+While loop - repeat some code while some condition is true
+For loop - repeat some code a limited amount of times
+Functions - A section of reusable code .
+            Declare code once, use it whenever you want
+            call the function to execute the code
+Variable Scope - where a variable is recognized and acessible(local vs global)
+Arrays - variable like structure that can hold more than 1 value
+2D array - multi dimensional array that stores a matrix of data in rows and columns
+            useful for games, spreadsheets, or representing images
+Spread Operators(...) - allows an iterable such as an array or string to be expanded into separate elements
+                        (unpack the elements)
+Rest Parameters - (...rest) allows a function work with a variable number of arguments by building them into an array
+                    spread - expands an array into separate elements
+                    rest - bundles separate elements into an array
+callback - a function that is passed as an argument to another function
+           used to handle asynchronous operations
+           1.Reading a file
+           2.Network requests
+           3.Interacting with databases
+forEach() - method used to iterate over elements of an array and apply a specified function(callback) to each element
+            array.forEach(callback)
+            element, index, array are provided
+            it is used when we need to apply function for each element of an array
+.map() - accepts a callback and applies that function to each element of an array, then return a new arraay
+.filter() - creates a new array by filtering out elements
+.reduce() - reduce the elements of an array to a single value
+function declaration - define a reusable block of code that performs a specific task
+function expression - a way to define function as values or variables
+arrow function - a concise way to write function expressions good for simple functions that you use only once
+                 (Parameter) => some code
+objects - A collection of related properties and/or methods can represent real world objects(people, products, places)
+          properties - what object has, are key value pairs
+          methods/ functions - what object can perform
+          object ={key:value, function()}
+this - reference to the object where THIS is used 
+       (the object depends on the immediate context)
+       doesn't work with arrow functions
+       person.name=this.name
+constructors - special method for defining the properties and methods of objects
+classes - (Es6 feature) provides a more structured and cleaner way to work with objects compared to traditional constructor functions
+          ex. static keyword, encapsulation, inheritance
+Static - keyword that defines properties or methods that belong to a class itself rather than the objects created from that class
+         (class owns anything static, not the objects)
+Inheritance - allows a new class to inherit properties and methods from an existing class(parent -> child)
+              helps with code reusability
+Super - keyword is used in classes to call the constructor or access the properties and methods of a parent(superclass)
+        this=this object
+        super=the parent
+getter - special method that makes a property readable
+setter - special method that makes a property writable
+    validate and modify a value while reading or writing a property
+Destructuring - extract values from arrays and objects, then assign them to variables in a convenient way
+                [] - to perform array destructuring 
+                {} - to perform object destructuring
+Nested Objects - objects inside of other objects
+                 allows you to represent more complex data structures
+                 child object is enclosed by a parent object
+                 person{address{},contactInfo{}}
+                 shoppingCart{keyboard{},Mouse{},Monitor{}}
+sort -  method used to sort elements of an array in place
+        sorts elements as strings in lexiographic order, not alphabetical
+        (lexiographic = (alphabet + numbers + symbols) as strings)
+Date Objects -  Objects that certain values that represent dates and times
+                These date objects can be changed and formatted
+                Date(year, month, day, hour, second, ms)
+Closures -  A function defined inside of another function
+            the inner function has access to the variables and scope of outer function
+            Allows for private variables and state maintenance
+            Used frequently in JS frameworks: React, Vue, Angular
+setTimeout() - function in javascript that allows you to schedule 
+                the execution of a function after an amount of time(milliseconds)
+               Times are approximate (varies based on the workload of the javascript runtimr env)
+               setTimeout(callback,delay)
+               clearTimeout(timeoutId) - can clear a timeout before it trigers
+time - tool that allows you to measure the time it takes for a section of code or process to execute
+        Great for identifying performance "bottlenecks"
+.toLocalString() - returns a string with a language sensitive representation of a number
+                    Intl.NumberFormat()
+                    number.toLocalString("locale",{options})
+                    locale - specify the language (undefined - default set in browser)
+                    options - object with formatting options
+ES6 Module - An external file that contains reusable code
+             that can be imported into another JS files.
+             Write reusable code for many different apps.
+             Can contain variables, classes, functions ... and more
+             Introduced as part of ECMAScript 2015 update
+synchronous - Executes line by line consecutively in a sequential manner
+              Code that waits for an operation to complete
+asynchronous - Allows multiple operation to performed concurrently without waiting
+               Doesn't block the execution flow and allows the program to continue
+               (I/O operations, Network requests, fetching data)
+               Handled with: Callbacks, Promises, Async/Await
+Errors - An object that is created to represent a problem that occurs
+         Occur often with user input or establishing a connection
+         try - Encloses code that might potentially cause an error
+         catch - Catch and handle any thrown Erros from try 
+         finally - (optional) Always executes. Used mostly for clean up
+                    ex. close file, close connections, release resources
+DOM - Document Object Model 
+      Object{} that represents the page you see in the web browser
+      and provides you with an API to interact with it.
+      Web browser constructs the DOM when it loads an HTML document,
+      and structures all the elements in a tree-like representation.
+      JS can access the DOM to dynamically
+      change the content, structure, and style of a web page
+Element Selectors - methods used to target and manipulate HTML elements
+                    They allow you to select one or multiple HTML elements
+                    from the DOM
+                    document.getElementById() - element or null
+                    document.getElementsByClassName() - HTML collection
+                    document,getElementsByTagName() - HTML collection
+                    document.querySelector() - first element or null
+                    document.querySelectorAll() - Nodelist
+                    Nodelist is similar to HTML collection except it has built in methods similarto arrays
+                    Nodelist is static and HTML collections are live
+                    since Nodelist are static they donot update automatically in DOM 
+DOM Navigation - The process of navigating through the structure 
+                 of an HTML document using JS.
+                 .firstElementChild
+                 .lastElementChild
+                 .nextElementSibling
+                 .previousElementSibling
+                 .parentElement
+                 .children - HTML collection
+Event Listeners - Listen for specific events to create interactive web pages
+                  events : click, mouseover, mouseout
+                  .addEventListener(event,callback)
+                  events : keydown, keyup
+                  document.addEventListener(event,callback)
